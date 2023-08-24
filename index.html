@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="startGame">
+        <button id="btnStart" onclick="start()">Start Game</button>
+    </div>
+    <div id="enterMoney">
+        <h3 style="font-size: 33px; color: #fff;">Amount of the money</h3>
+        <input type="number" id="inpMoney">
+        <h3 style="color: #fff; font-size: 20px;">min coin:100</h3>
+        <h3 style="color: #fff; font-size: 20px;">max coin:100000</h3>
+        <h3></h3>
+        <button id="btnEnter" onclick="enter()">Enter</button>
+        <button id="btnX" onclick="X()">X</button>
+    </div>
+    <div id="game">
+        <h2 id="win"></h2>
+        <div id="root">
+            <div id="item2" class="item"></div>
+            <div id="item3" class="item"></div>
+            <div id="item1" class="item"></div>
+        </div>
+        <div>
+            <button id="btn" onclick="spin()">SPIN:20</button>
+        </div>
+        <h3 id="score"></h3>
+        <button id="btnX" onclick="X()">X</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
